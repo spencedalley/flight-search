@@ -90,3 +90,7 @@ ENV/
 
 # idea ide directory
 .idea/
+
+# sqlite databases
+db.sqlite3
+
