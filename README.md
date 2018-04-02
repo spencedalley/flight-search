@@ -12,11 +12,11 @@ Complete the following steps to setup the project:
 
 ## Main API Logic
 
-The logic for the `flights/search` API is in the `./src/app/views.py` file
+The logic for the `flights/search` API is in the `./src/app/views.py` file (i.e. where the API calls and sorting happens).
 
 ## Tests
 
-The tests for this application are in the `./src/app/tests.py` file
+The tests for this application are in the `./src/app/tests.py` file. Run the tests from the `src/` directory with the command `./manage.py test`.
 
 ## Docker
 
