@@ -7,8 +7,9 @@ Complete the following steps to setup the project:
 4) Run `virtualenv --python=python3.6 .`
 5) Run `source bin/activate` to switch to virtualenv interpreter
 6) Run `cd src`
-7) Run `./manage.py runserver 8000`
-8) The server is now up and running with endpoint `/flights/search` ready to be accessed. 
+7) Run `pip install -r requirements.txt`
+8) Run `./manage.py runserver 8000`
+9) The server is now up and running with endpoint `/flights/search` ready to be accessed. 
 
 ## Main API Logic
 
