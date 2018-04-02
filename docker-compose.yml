@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx__001
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/src
+      - ./config/nginx:/etc/nginx/conf.d
+    depends_on:
+      - web
+  web:
+    restart: always
+    build: .
+    container_name: flight_search__001
+    network_mode: "host"
+    command: bash -c "python manage.py makemigrations && python manage.py migrate --noinput && gunicorn app.wsgi -w 3 -b 0.0.0.0:8000"
+    volumes:
+      - ./src:/src
+    expose:
+      - "8000"
