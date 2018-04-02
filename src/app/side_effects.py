@@ -74,5 +74,3 @@ class MockNoJsonMethodError:
 
     def json(self):
         raise AttributeError(None, None, None)
-
-

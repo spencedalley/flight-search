@@ -89,7 +89,3 @@ class SearchFlightsTestCase(TestCase):
         json_response = json.loads(response.content)
         self.assertEqual(json_response.get("count"), 0)
         self.assertEqual(json_response.get("results"), [])
-
-
-
-
